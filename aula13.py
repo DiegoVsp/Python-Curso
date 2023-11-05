@@ -1,10 +1,11 @@
-nome='Diego'
-altura= 1.83
-peso = 88
-imc = peso/(altura**2)
+nome = 'Diego'
+altura = input('Digite sua altura: ')
+peso = input('Digite seu peso: ')
+imc = int(peso)/(float(altura)**2)
 
-#formatação
-#f-strings 
-linha_1 = f'{nome} tem altura de {altura:.2f}, pesa {peso} quilos e seu IMC é de {imc:.2f}'
+# print(f'Seu IMC é de {imc:.2f}')
+# formatação
+# f-strings
+linha_1 = f'{nome} tem altura de {altura}, pesa {peso} quilos e seu IMC é de {imc:.2f}'
 print(linha_1)
-print(nome,'tem',altura,'de altura, pesa',peso,'quilos e seu IMC é de',imc)
+print(f'{nome} tem {altura} de altura, pesa {peso} quilos e seu IMC é de {imc:.2f}')
